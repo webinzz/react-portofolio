@@ -4,14 +4,20 @@ const Header = () => {
 
 
   return <>
-   <div id="home" className="sticky -top-16 -z-10   text-center  h-screen overflow-hidden pt-28 bg-slate-100  flex flex-col justify-start items-center" >
-        
-        <h1 className="text-2xl text-slate-500 z-20">Hello world, my name is Ergia </h1>
-        <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" className="lg:text-8xl text-[4rem]  text-transparent bg-clip-text outline-text font-bold z-20 ">FULLSTACK WEB</h1>
-        <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" className="lg:text-8xl text-[4rem]  text-sky-300 font-bold z-20">DEVELOPER</h1>
-  
+   <div id="home" className="sticky -top-16 -z-10   text-center  h-screen overflow-hidden -mt-10 px-24 bg-slate-50  flex items-center" >
+        <div className="w-1/2 text-start text-slate-600" >
+        <h3 className="text-3xl font-semibold">Hello World( );</h3>
+        <h1 className="text-5xl font-bold">
+          I am <span className="text-sky-300">Ergia Buccharelli</span>
+        </h1>
+          <div id="app"></div>
+        <p className="text-lg">
+          Some quick example text to build on the card title and make up the
+          bulk of the cards content.
+        </p>
+        </div>
+
   </div>
-  {/* <div className="h-screen">.</div> */}
   </>
  
 }
