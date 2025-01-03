@@ -1,36 +1,64 @@
 // import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 function project() {
   return (
-    <section id="abouts" className=" mx-auto min-h-screen w-full lg:flex justify-evenly items-center px-20">
+    <section
+      id="project"
+      className=" z-10 mx-auto min-h-screen w-full md:flex xl:gap-16 justify-between items-center md:px-10 lg:px-20 py-32 md:py-0"
+    >
+      <div className="md:w-1/2 md:p-6 h-40 lg:px-10 md:text-start text-center mb-10 ">
+        <h3 data-aos="fade-right" className="text-6xl text-slate-600 font-bold">
+          My <span className="text-sky-300">Project</span>
+        </h3>
 
-    <div data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine" className="lg:w-1/2 p-6  lg:px-10"> 
-      <h3 className="text-6xl  text-sky-300 font-bold">My <span className="text-slate-600">Project</span></h3>
+        <p className="mb-5 mt-2 text-lg text-slate-600">
+          Explore the projects I’ve completed and the technologies I use
+        </p>
+        <Link
+          to={"/project"}
+          className="px-5 p-2 bg-slate-600 text-white rounded-lg"
+        >
+          VIew Project
+        </Link>
+      </div>
 
-      <p className="mb-5 mt-2 text-lg text-slate-600">Explore the projects I’ve completed and the technologies I use
-      </p>
-      <Link to={"project"} className="px-7 p-3 bg-sky-300 text-white rounded-lg">
-      View Projects
-      </Link>
+      <div
+        data-aos="zoom-in"
+        className="md:w-3/5 lg:w-1/2 w-full relative border-8 border-dashed group md:p-6   overflow-hidden rounded-md cursor-pointer   h-[34rem]"
+      >
+        <div className="absolute flex gap-3 -top-4 -left-72 -rotate-45">
+          <div className="w-60 h-40 bg-white" >.</div>
+          <div className="w-60 h-40 bg-white" >.</div>
+          <div className="w-60 h-40 bg-white" >.</div>
+        </div> 
+        <div className="absolute flex gap-3 top-20 -left-96 -rotate-45">
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+        </div>
+        <div className="absolute flex gap-3 -left-40 top-2  -rotate-45">
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+        </div>
+        <div className="absolute flex gap-3  top-28  -rotate-45">
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+          <div className="w-60 h-44 bg-white" >.</div>
+        </div>
 
-
-      
-
-    </div>
-
-
-
-    <div data-aos="zoom-in" className="md:w-1/2 relative   mx-auto group p-6  overflow-hidden rounded-md cursor-pointer flex justify-center  h-[34rem]">
-        <div className="bg-slate-400 absolute w-96 h-56 top-6 left-5 hover:scale-105 hover:z-40 transition-all "></div>
-        <div className="bg-slate-500 absolute w-96 h-56 top-32 right-0 hover:scale-105 hover:z-40 transition-all "></div>
-        <div className="bg-slate-600 absolute w-96 h-56 bottom-6 left-16 hover:scale-105 hover:z-40 transition-all "></div>
-    </div>
-    
-</section>
-  )
+      </div>
+    </section>
+  );
 }
 
-export default project
+export default project;

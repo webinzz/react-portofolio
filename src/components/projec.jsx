@@ -3,7 +3,7 @@
 
 function projec() {
   return (
-    <div className="col-span-1 h-96 bg-slate-400 relative p-6  border-2  flex items-end justify-between text-slate-600 overflow-hidden">
+    <div className="col-span-1 h-80 bg-slate-400 relative p-6  border-2  flex items-end justify-between text-slate-600 overflow-hidden">
             <div className="z-10 text-white">
                 <h1 className="font-bold ">E-commerce</h1>
                 <h1 className="">project for a e-commerce website</h1>

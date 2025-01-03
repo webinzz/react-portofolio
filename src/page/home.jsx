@@ -10,7 +10,7 @@ function home() {
     <>
     <Navbar />
     <Header />
-    <main className="bg-[#f7f7f7]">
+    <main className="bg-white rounded-t-[5rem]">
     <About />
     <Project />
     <Contact />

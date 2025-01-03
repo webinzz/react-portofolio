@@ -1,38 +1,42 @@
 // import React from 'react'
+import Media from "../components/media";
+import wa from "../assets/mediasocial/wa.png";
+import mail from "../assets/mediasocial/mail.png";
+import tiktok from "../assets/mediasocial/tiktok1.png";
+import github from "../assets/mediasocial/github1.png";
+import bg from "../assets/contact.jpeg";
+
 
 function contect() {
   return (
-    <section id="contact" className="z-10 mx-auto min-h-screen w-full lg:flex justify-evenly items-center px-20">
+    <section
+      id="contact"
+      className=" z-10 mx-auto min-h-screen w-full md:flex xl:gap-16 justify-between items-center px-10  lg:px-20 py-32 md:py-0"
+    >
+      <div className="md:w-1/2 md:p-6 h-40 lg:px-10 md:text-start text-center mb-36">
+        <h3 className="text-6xl text-slate-600 font-bold">
+          Contact <span className="text-sky-300">Me</span>
+        </h3>
 
-    <div data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine" className="lg:w-1/2 p-6  lg:px-10"> 
-      <h3 className="text-6xl text-slate-600 font-bold">Contact <span className="text-sky-300">Me</span></h3>
+        <p className="mb-5 mt-2 text-lg text-slate-600">
+          Get in touch for collaboration or inquiries.
+        </p>
 
-      <p className="mb-5 mt-2 text-lg text-slate-600">
-      Get in touch for collaboration or inquiries.
-      </p>
-
-      <div className="  z-40 w-72  text-left flex  gap-4  text-white rounded-full ">            
-          <div className="w-14 bg-white h-14 rounded-full hover:scale-110 shadow transition-all duration-100 flex justify-center items-center text-sky-400"><a href="" className="material-symbols-outlined">phone_in_talk</a></div>
-          <div className="w-14 bg-white h-14 rounded-full hover:scale-110 shadow transition-all duration-100 flex justify-center items-center text-sky-400"><a href="" className="material-symbols-outlined">language</a></div>
-          <div className="w-14 bg-white h-14 rounded-full hover:scale-110 shadow transition-all duration-100 flex justify-center items-center text-sky-400"><a href="" className="material-symbols-outlined">email</a></div>
-          <div className="w-14 bg-white h-14 rounded-full hover:scale-110 shadow transition-all duration-100 flex justify-center items-center text-sky-400"><a href="" className="material-symbols-outlined">send</a></div>
+        <div className="  z-40 w-full  text-left flex md:justify-start justify-center  gap-4 text-white rounded-full ">
+          <Media img={wa} />
+          <Media img={mail} />
+          <Media img={tiktok} />
+          <Media img={github} />
         </div>
+      </div>
 
-
-      
-
-    </div>
-
-
-
-    <div data-aos="zoom-in" className="md:w-1/2 bg-slate-500 relative   mx-auto group p-6  overflow-hidden rounded-md cursor-pointer flex justify-center  h-[34rem]">
-       
-    </div>
-    
-</section>
-  )
+      <div
+        data-aos="zoom-in"
+        className="md:w-3/5 lg:w-1/2 relative bg-slate-400  group md:p-6   overflow-hidden rounded-md cursor-pointer   h-[34rem]"
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+      ></div>
+    </section>
+  );
 }
 
-export default contect
+export default contect;

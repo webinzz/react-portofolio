@@ -6,9 +6,9 @@ import Projec from "../components/projec"
 function home() {
   return (
     <>
-    <main className="bg-[#f7f7f7]">
+    <main className="bg-white">
     <Navbar />
-    <div className="grid grid-cols-2 gap-6 p-20  min-h-screen items-start">
+    <div className="grid md:grid-cols-2 grid-cols-1 gap-6 p-5 pt-20 lg:p-20  min-h-screen items-start">
         <Projec />
         <Projec />
         <Projec />

@@ -2,7 +2,6 @@
 import {Link} from 'react-router-dom'
 import me1 from '../assets/me/me3.png'
 import me2 from '../assets/me/me4.png'
-import me3 from '../assets/me/me2.png'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
@@ -14,16 +13,16 @@ function about() {
   }, []);
   
   return (
-    <section id="abouts" className="z-10 mx-auto min-h-screen w-full lg:flex justify-evenly items-center px-20">
+    <section id="about" className="z-10 mx-auto min-h-screen w-full md:flex justify-between items-center  md:px-10 lg:px-20 py-32 md:py-0" >
 
     <div 
-     className="lg:w-1/2 p-6  lg:px-10"> 
+     className=" lg:w-1/2 lg:p-6  h-40 xl:px-10 md:text-start text-center"> 
       <h3 data-aos="fade-right" className="text-6xl text-slate-600 font-bold">About <span className="text-sky-300">Me</span></h3>
 
       <p className="mb-5 mt-2 text-lg text-slate-600">
-      Learn more about my background and what drives me.
+      Learn more about me, my background and my skill.
       </p>
-      <Link to={'/about'} className="px-7 p-3 bg-sky-300 text-white rounded-lg">
+      <Link to={'/about'} className="px-5 p-2 bg-slate-600 text-white rounded-lg">
         learn more
       </Link>
 
@@ -34,10 +33,13 @@ function about() {
 
 
 
-    <div  className="md:w-1/2 relative   mx-auto group p-6  overflow-hidden rounded-md cursor-pointer flex justify-center  h-[34rem]">
-        <div data-aos="zoom-in" className="bg-slate-400 absolute w-56 h-56 top-6 left-20 hover:scale-105 transition-all brightness-75 hover:brightness-100" style={{ backgroundImage: `url(${me2})`, backgroundSize: "cover", backgroundPosition: "center" }} ></div>
-        <div data-aos="zoom-in" className="bg-slate-400 absolute w-60 h-72 top-32 right-0 hover:scale-105 transition-all  brightness-75 hover:brightness-100" style={{ backgroundImage: `url(${me1})`, backgroundSize: "cover"  }}></div>
-        <div data-aos="zoom-in" className="bg-slate-400 absolute w-72 h-56 bottom-6 left-9 hover:scale-105 transition-all brightness-75 hover:brightness-100" style={{ backgroundImage: `url(${me3})`, backgroundSize: "cover" }}></div>
+    <div  className="sm:w-3/5 mx-auto md:mx-0 w-full relative  group p-6  overflow-hidden rounded-md cursor-pointer flex justify-center  h-[34rem]">
+        <div data-aos="fade-left" className="bg-slate-400 absolute md:w-64 w-48 h-72  md:h-96 left-0 top-6 lg:left-20 hover:scale-105 transition-all brightness-75 z-10" style={{ backgroundImage: `url(${me1})`, backgroundSize: "cover", backgroundPosition: "center" }} ></div>
+        <div data-aos="zoom-in" className="bg-slate-400 absolute md:w-64 w-48 h-72 md:h-96  bottom-6 right-0 hover:scale-105 transition-all  brightness-75 z-10" style={{ backgroundImage: `url(${me2})`, backgroundSize: "cover"  }}></div>
+
+        <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-dashed border-slate-300 w-[400px] h-[400px] opacity-50  border-8 rounded-full"></div>
+        <h1 className='absolute top-20 lg:right-28 right-10 font-semibold text-xl text-slate-600 animate-bounce'>MySkill</h1>
+        <h1 className='absolute bottom-16 lg:left-20 left-8 font-semibold text-xl text-slate-600 animate-bounce'>MyExperience</h1>
     </div>
     
 </section>
