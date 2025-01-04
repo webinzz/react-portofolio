@@ -14,16 +14,16 @@ function contect() {
       className=" z-10 mx-auto min-h-screen w-full md:flex xl:gap-16 justify-between items-center px-10  lg:px-20 py-32 md:py-0"
     >
       <div className="md:w-1/2 md:p-6 h-40 lg:px-10 md:text-start text-center mb-36">
-        <h3 className="text-6xl text-slate-600 font-bold">
+        <h3 data-aos="fade-right" className="text-6xl text-slate-600 font-bold">
           Contact <span className="text-sky-300">Me</span>
         </h3>
 
-        <p className="mb-5 mt-2 text-lg text-slate-600">
+        <p data-aos="fade-left" className="mb-5 mt-2 text-lg text-slate-600">
           Get in touch for collaboration or inquiries.
         </p>
 
-        <div className="  z-40 w-full  text-left flex md:justify-start justify-center  gap-4 text-white rounded-full ">
-          <Media img={wa} />
+        <div data-aos="fade-up" data-aos-duration="2000"  className="  z-40 w-full  text-left flex md:justify-start justify-center  gap-4 text-white rounded-full ">
+          <Media  img={wa} />
           <Media img={mail} />
           <Media img={tiktok} />
           <Media img={github} />

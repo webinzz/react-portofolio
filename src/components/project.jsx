@@ -1,5 +1,6 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
+import hero from "../assets/portofolio/heroproject.png";
 
 function project() {
   return (
@@ -12,7 +13,7 @@ function project() {
           My <span className="text-sky-300">Project</span>
         </h3>
 
-        <p className="mb-5 mt-2 text-lg text-slate-600">
+        <p data-aos="fade-left" className="mb-5 mt-2 text-lg text-slate-600">
           Explore the projects I’ve completed and the technologies I use
         </p>
         <Link
@@ -23,38 +24,15 @@ function project() {
         </Link>
       </div>
 
+
       <div
         data-aos="zoom-in"
-        className="md:w-3/5 lg:w-1/2 w-full relative border-8 border-dashed group md:p-6   overflow-hidden rounded-md cursor-pointer   h-[34rem]"
+        data-aos-duration="2000"
+        className="md:w-3/5 lg:w-1/2 w-full relative bg-slate-50 border-2  group md:p-6  overflow-hidden rounded-md cursor-pointer   h-[34rem]"
+        style={{ backgroundImage: `url(${hero})`, backgroundSize: "cover" }}
       >
-        <div className="absolute flex gap-3 -top-4 -left-72 -rotate-45">
-          <div className="w-60 h-40 bg-white" >.</div>
-          <div className="w-60 h-40 bg-white" >.</div>
-          <div className="w-60 h-40 bg-white" >.</div>
-        </div> 
-        <div className="absolute flex gap-3 top-20 -left-96 -rotate-45">
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-        </div>
-        <div className="absolute flex gap-3 -left-40 top-2  -rotate-45">
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-        </div>
-        <div className="absolute flex gap-3  top-28  -rotate-45">
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-          <div className="w-60 h-44 bg-white" >.</div>
-        </div>
+        .
+    
 
       </div>
     </section>
