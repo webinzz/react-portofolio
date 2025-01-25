@@ -1,5 +1,5 @@
 // import React from 'react'
-import Media from "../components/media";
+import Media from "./Media";
 import wa from "../assets/mediasocial/wa.png";
 import mail from "../assets/mediasocial/mail.png";
 import tiktok from "../assets/mediasocial/tiktok1.png";
@@ -14,11 +14,11 @@ function contect() {
       className=" z-10 mx-auto min-h-screen w-full md:flex xl:gap-16 justify-between items-center px-10  lg:px-20 py-32 md:py-0"
     >
       <div className="md:w-1/2 md:p-6 h-40 lg:px-10 md:text-start text-center mb-36">
-        <h3 data-aos="fade-right" className="text-6xl text-slate-600 font-bold">
+        <h3 data-aos="fade-right" className="text-6xl text-slate-600 dark:text-slate-100 font-bold">
           Contact <span className="text-sky-300">Me</span>
         </h3>
 
-        <p data-aos="fade-left" className="mb-5 mt-2 text-lg text-slate-600">
+        <p data-aos="fade-left" className="mb-5 mt-2 text-lg text-slate-600 dark:text-slate-100">
           Get in touch for collaboration or inquiries.
         </p>
 
@@ -32,7 +32,7 @@ function contect() {
 
       <div
         data-aos="zoom-in"
-        className="md:w-3/5 lg:w-1/2 relative bg-slate-400  group md:p-6   overflow-hidden rounded-md cursor-pointer   h-[34rem]"
+        className="md:w-3/5 lg:w-1/2 relative bg-slate-400  group md:p-6   overflow-hidden rounded-md cursor-pointer   h-[34rem] brightness-75"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       ></div>
     </section>
