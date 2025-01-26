@@ -107,7 +107,7 @@ function home() {
             </p>
           </div>
 
-          <div className="md:w-2/3 bg-white dark:bg-slate-900 border-2 border-sky-400 shadow-xl rounded flex md:flex-row flex-col p-10 gap-8">
+          <div className="md:w-2/3 bg-white dark:bg-slate-800 border-2 border-sky-400 shadow-xl rounded flex md:flex-row flex-col p-10 gap-8">
             {/* school */}
             <div className="md:w-1/2 flex flex-col gap-6">
               <h1
@@ -157,7 +157,7 @@ function home() {
 
         {/* skill */}
         <div className="flex md:flex-row flex-col-reverse justify-between  w-full mt-10 p-10 lg:px-24 md:px-5 gap-10 min-h-screen">
-          <div className="md:w-2/3 h-max  bg-white dark:bg-slate-900 border-2 border-sky-400 rounded shadow-xl grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 p-8 py-12 items-start">
+          <div className="md:w-2/3 h-max  bg-white dark:bg-slate-800 border-2 border-sky-400 rounded shadow-xl grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 p-8 py-12 items-start">
             <Skill img={html} title="HTML" status="advenced" />
             <Skill img={css} title="CSS" status="advenced" />
             <Skill img={js} title="javascrip" status="advenced" />
