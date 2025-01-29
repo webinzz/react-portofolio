@@ -16,7 +16,7 @@ import Wizard from "../assets/portofolio/wizard.png";
 
 // tech
 
-function home() {
+function Project() {
   return (
     <>
       <main className="bg-slate-50 dark:bg-slate-800">
@@ -63,4 +63,4 @@ function home() {
   );
 }
 
-export default home;
+export default Project;

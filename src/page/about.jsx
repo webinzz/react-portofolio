@@ -1,6 +1,6 @@
 // import React from 'react'
 import Navbar from "../components/Layouts/Navbar/Navbar";
-import Experience from "../components/Experience";
+import Experience from '../components/Experience'
 import Skill from "../components/Skill";
 import me from "../assets/me/me3.png";
 
@@ -17,7 +17,7 @@ import flutter from "../assets/skill/flutter.png";
 import git from "../assets/skill/git.png";
 import github from "../assets/skill/github.png";
 
-function home() {
+export default function About() {
   return (
     <>
       <Navbar />
@@ -191,4 +191,3 @@ function home() {
   );
 }
 
-export default home;
